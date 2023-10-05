@@ -1,12 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Source_Sans_3 } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const sans = Source_Sans_3({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Tailwind + DaisyUI // Super Custom',
-  description: '...',
+  title: 'React + Tailwind + DaisyUI + CDL',
+  description: 'experiments',
 }
 
 export default function RootLayout({
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="bg-transparent antialiased">
+      <body className={sans.className}>{children}</body>
     </html>
   )
 }

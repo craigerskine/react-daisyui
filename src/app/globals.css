@@ -5,3 +5,12 @@
 body {
   @apply bg-base-100 text-base-content;
 }
+
+@layer components {
+  .file-input,.select,.input {
+    @apply leading-none rounded-none placeholder:italic;
+  }
+  .file-input-bordered,.select-bordered,.input-bordered {
+    @apply border-gray-600;
+  }
+}

@@ -8,6 +8,52 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        gray: {
+          100: '#F8F8F8',
+          200: '#F3F3F3',
+          300: '#DDD',
+          400: '#C8C8C8',
+          500: '#989898',
+          600: '#686868',
+          700: '#383838',
+          800: '#242424',
+          900: '#080808',
+        },
+        standard: {
+          100: '#CFF3F9',
+          200: '#CFF3F9',
+          300: '#A2D6DD',
+          400: '#45A5B5',
+          500: '#00758E',
+          600: '#205460',
+          700: '#205460',
+          800: '#205460',
+          900: '#205460',
+        },
+        warning: {
+          100: '#FFE7E5',
+          200: '#FFE7E5',
+          300: '#FFAFAF',
+          400: '#EF5656',
+          500: '#DA1B2C',
+          600: '#A51426',
+          700: '#A51426',
+          800: '#A51426',
+          900: '#A51426',
+        },
+        confirmation: {
+          100: '#DAF4D4',
+          200: '#DAF4D4',
+          300: '#ACDBA2',
+          400: '#68B75F',
+          500: '#3B822E',
+          600: '#2C5E20',
+          700: '#2C5E20',
+          800: '#2C5E20',
+          900: '#2C5E20',
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -26,15 +72,16 @@ const config: Config = {
       {
         'prose-light': {
           'primary': '#00758E',
-          'primary-content': '#FFFFFF',
+          'primary-content': '#FFF',
           'secondary': '#DA1B2C',
-          'secondary-content': '#FFFFFF',
+          'secondary-content': '#FFF',
           'accent': '#3B822E',
-          'accent-content': '#FFFFFF',
+          'accent-content': '#FFF',
           'neutral': '#242424',
-          'base-100': '#FFFFFF',
+          'neutral-content': '#FFF',
+          'base-100': '#FFF',
           'info': '#3192D3',
-          'info-content': '#FFFFFF',
+          'info-content': '#FFF',
           'success': '#68B75F',
           'success-content': '#242424',
           'warning': '#E5D676',
@@ -85,6 +132,7 @@ const config: Config = {
           },
           '.file-input,.select,.input': {
             'height': 'var(--input-size-md)',
+            'min-height': 'auto',
           },
           '.file-input.file-input-xs,.select.select-xs,.input.input-xs': {
             'height': 'var(--input-size-xs)',
